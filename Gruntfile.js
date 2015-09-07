@@ -6,9 +6,10 @@ module.exports = function(grunt) {
     	pkg: grunt.file.readJSON('package.json'),
 
 		project: {
-		    app: ['app'],
-		    assets: ['<%= project.app %>/assets'],
-		    css: ['<%= project.assets %>/sass/style.scss']
+		    app: ['Kafal'],
+		    assets: ['../<%= project.app %>/assets'],
+		    css: ['<%= project.assets %>/sass/app.scss']
+
 		},
 		sass: {
 		    dev: {
@@ -17,7 +18,7 @@ module.exports = function(grunt) {
 		            compass: false
 		        },
 		        files: {
-		            '<%= project.assets %>/css/style.css':'<%= project.css %>'
+		            '<%= project.assets %>/css/app.css':'<%= project.css %>'
 		        }
 		    }
 		},
