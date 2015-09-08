@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Kafal Resturant</title>
+  
+  <link href="/Users/stuladhar/Documents/Kafal/assets/css/app.css" rel="stylesheet" />
+  <style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="titleMenu">
+                      <li class="selected">Home</li>
+                      <li>San Francisco</li>
+                      <li>Santa Rosa</li>
+                      <li>San Leandro</li>
+                      <li>San Jose</li>
+                      <li>Santa Monica</li>
+                    </ul>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <div class="title">
+        <div class="container">
+            <div class="row">
+                <div class ="clo-lg-4 col-md-4 col-sm-12">
+                    <p class="logo"><img src="../kafal/assets/image/logo.png" alt="logo"/ width="130"></p>
+                </div>
+                <div class ="clo-lg-8 col-md-8 col-sm-12">
+                    <ul class="subMenu">
+                        <li class="underline">Home</li>
+                        <li>Team</li>
+                        <li>Menu</li>
+                        <li>Contact US</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class ="clo-lg-6 col-md-6 col-sm-12">
+                    <div class="header">
+                        Address
+                    </div>
+                    <div class="address">
+                        2199 Bancroft Ave<br/>
+                        Santa Rosa, California<br/>
+                        96990
+                    </diV>
+                    <div class="comment">
+                        Please send your comment and queries in the kafal@gmail.com to improve our service or</br>
+                        Fill out the form
+
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="number" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <p><label for="phone">Message:</label></p>
+                           <textarea rows="4" cols="50"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                 <div class ="clo-lg-6 col-md-6 col-sm-12">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class ="clo-lg-4 col-md-4 col-sm-12">
+                    <div class="title">
+                        Social Media
+                    </div>
+                    <div class="details">
+                      
+                    </div>
+                </div>
+                <div class ="clo-lg-4 col-md-4 col-sm-12">
+                    <div class="title">
+                        Working Hours
+                    </div>
+                    <div class="details">
+                        Depending on the guest and foods and days you can make your catering orders.
+                    </div>
+                </div>
+            
+           
+                <div class ="clo-lg-4 col-md-4 col-sm-12">
+                    <div class="title">
+                        Address
+                    </div>
+                    <div class="details">
+                        Depending on the guest and foods and days you can make your catering orders.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
